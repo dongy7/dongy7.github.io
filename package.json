@@ -1,0 +1,19 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "description": "Personal Blog",
+  "main": "app.js",
+  "repository": "http://dongy7.github.io",
+  "author": "Dong Yeop Lee",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^2.4.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
