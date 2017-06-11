@@ -1,11 +1,17 @@
+import Head from 'next/head';
+import Title from '../../components/post/title';
 import Post from '../../layouts/post';
 import { H2, H3 } from '../../components/post/heading';
 import Code from '../../components/post/code';
 import Snippet from '../../components/post/snippet';
 import P from '../../components/post/paragraph';
+import Meta from '../../components/post/meta';
 
 export default () =>
   <Post>
+    <Head><title>Fun with Circuits</title></Head>
+    <Title>Fun with Circuits</Title>
+    <Meta date="January 7, 2017" />
     <P>
       This post assumes that you have a basic understanding of bitwise
       operations. I’ll also be using TypeScript in my examples because it offers
