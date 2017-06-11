@@ -1,5 +1,5 @@
-import Page from '../layouts/Main';
-import Post from './Post';
+import Page from '../layouts/main';
+import Post from './post';
 import { posts } from '../posts';
 
 export default () =>

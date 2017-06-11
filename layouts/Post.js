@@ -1,4 +1,4 @@
-import Page from './Main';
+import Page from './main';
 
 export default ({ children }) =>
   <Page>
