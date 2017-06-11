@@ -1,11 +1,10 @@
 import Link from 'next/prefetch';
 import Meta from '../components/meta';
+import Nav from './nav';
 
 export default ({ children }) =>
   <div className="main">
-    <div className="logo">
-      <Link href="/"><a>Home</a></Link>
-    </div>
+    <Nav />
     {children}
     {/* global styles and meta tags */}
     <Meta />
