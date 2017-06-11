@@ -36,8 +36,8 @@ export default () =>
         text-align: center;
       }
       h1 {
-        font-size: 16px;
-        font-weight: bold;
+        font-size: 2em;
+        font-weight: normal;
       }
       nav {
         margin-top: 20px;
