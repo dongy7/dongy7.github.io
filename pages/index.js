@@ -12,7 +12,9 @@ export default () =>
       <div className="main">
         <h1>Dong Yeop Lee</h1>
         <nav>
-          <a target="_blank" href="https://twitter.com/dongy7">Twitter</a>
+          <a target="_blank" href="https://www.linkedin.com/in/dongy7/">
+            LinkedIn
+          </a>
           <Link href="/posts"><a>Posts</a></Link>
           <a href="mailto:dongy7@gmail.com">Email</a>
         </nav>
