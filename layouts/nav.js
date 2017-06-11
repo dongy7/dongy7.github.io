@@ -7,7 +7,7 @@ export default () =>
         <Link href="/"><a>Home</a></Link>
       </li>
       <li>
-        <Link href="/"><a>About</a></Link>
+        <Link href="/about"><a>About</a></Link>
       </li>
     </ul>
     <style jsx>{`
