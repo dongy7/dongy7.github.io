@@ -5,7 +5,12 @@ export default ({ children }) =>
       pre {
         line-height: 20px;
         margin-bottom: 20px;
-        font-size: 12px;
+        margin-top: 20px;
+        font-size: 13px;
+        border: 1px solid;
+        padding: 20px;
+        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+        overflow-x: scroll;
       }
       code {
         color: #999;
