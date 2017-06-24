@@ -8,8 +8,17 @@ export default ({ children }) =>
         margin-top: 20px;
         font-size: 13px;
         border: 1px solid;
-        padding: 20px;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        font-family: Menlo,
+          Monaco,
+          Lucida Console,
+          Liberation Mono,
+          DejaVu Sans Mono,
+          Bitstream Vera Sans Mono,
+          Courier New,
+          monospace,
+          serif;
         overflow-x: scroll;
       }
       code {
