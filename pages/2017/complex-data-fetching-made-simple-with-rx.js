@@ -306,7 +306,7 @@ const source = Rx.Observable
       Great, now that we have the IDs of the posts
       that we want to fetch, we need to get the data
       associated with each post. We can use the item endpoint
-      provided by the Firebase API. We'll use the <Code>ajax</Code>
+      provided by the Firebase API. We'll use the <Code>ajax</Code>{' '}
       operator to create a stream of reponse objects. Once again,
       we'll need to make use of the <Code>concatMap</Code> operator
       to merge an observable of observables into a single stream.
@@ -353,7 +353,7 @@ const source = Rx.Observable
       <Link to="http://reactivex.io/documentation/operators/scan.html">
         scan
       </Link>{' '}
-      operator. You can think of <Code>scan</Code> as a <Code>reduce</Code>
+      operator. You can think of <Code>scan</Code> as a <Code>reduce</Code>{' '}
       where a function is applied to the item emitted by the observable then
       the result is emitted. In our case, we'll push items from stream onto
       an array.
