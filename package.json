@@ -1,9 +1,9 @@
 {
   "name": "blog",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Personal Blog",
   "main": "app.js",
-  "repository": "http://dongy7.github.io",
+  "repository": "https://github.com/dongy7/blog.git",
   "author": "Dong Yeop Lee",
   "license": "MIT",
   "scripts": {
