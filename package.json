@@ -15,6 +15,7 @@
     "next": "^2.4.3",
     "nprogress": "^0.2.0",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "styled-components": "^2.1.1"
   }
 }
