@@ -26,17 +26,19 @@ export default () =>
       }
 
       body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
       }
 
       a {
-        color: #22BAD9;
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        color: #4b9cd3;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       }
 
       a:hover {
         color: #fff;
-        background: #22BAD9;
+        background: #4b9cd3;
         text-decoration: none;
       }
 
@@ -46,7 +48,7 @@ export default () =>
       }
 
       #nprogress .bar {
-        background: #22BAD9;
+        background: #4b9cd3;
         position: fixed;
         z-index: 1031;
         top: 0;
@@ -61,7 +63,7 @@ export default () =>
         right: 0px;
         width: 100px;
         height: 100%;
-        box-shadow: 0 0 10px #22BAD9, 0 0 5px #22BAD9;
+        box-shadow: 0 0 10px #4b9cd3, 0 0 5px #4b9cd3;
         opacity: 1.0;
         transform: rotate(3deg) translate(0px, -4px);
       }
