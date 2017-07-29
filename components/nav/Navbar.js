@@ -9,7 +9,6 @@ const Header = styled.header`
 
 const Nav = styled.div`
   margin-top: -2px;
-  padding: 10px;
   padding-right: 0;
   position: absolute;
   top: 50%;

@@ -2,12 +2,13 @@ import Link from 'next/prefetch'
 import Meta from '../components/meta'
 import Navbar from '../components/nav/Navbar'
 import NavLink from '../components/nav/Link'
+import Container from '../components/Container'
 
 export default ({ children }) =>
   <div>
     <Navbar>
       <Link href="/">
-        <NavLink>Home</NavLink>
+        <NavLink first>Home</NavLink>
       </Link>
       <Link href="/about">
         <NavLink>About</NavLink>
@@ -16,29 +17,9 @@ export default ({ children }) =>
         <NavLink>Posts</NavLink>
       </Link>
     </Navbar>
-    <div className="main">
-      {children}
+    <Container>
       {/* global styles and meta tags */}
+      {children}
       <Meta />
-      <style jsx>{`
-        .main {
-          padding: 25px 50px;
-        }
-        .logo {
-          padding-bottom: 50px;
-        }
-        a {
-          text-decoration: none;
-        }
-        @media (max-width: 500px) {
-          .main {
-            padding: 25px 15px;
-          }
-
-          .logo {
-            padding-bottom: 20px;
-          }
-        }
-      `}</style>
-    </div>
+    </Container>
   </div>

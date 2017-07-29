@@ -1,4 +1,4 @@
-import Page from './main';
+import Page from './main'
 
 export default ({ children }) =>
   <Page>
@@ -7,8 +7,6 @@ export default ({ children }) =>
     </article>
     <style jsx>{`
       article {
-        max-width: 650px;
-        margin: auto;
         font-size: 14px;
       }
     `}</style>
@@ -18,4 +16,4 @@ export default ({ children }) =>
         overflow-x: hidden;
       }
     `}</style>
-  </Page>;
+  </Page>
