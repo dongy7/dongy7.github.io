@@ -1,28 +1,17 @@
+import styled from 'styled-components'
+import Code from './code'
+
+const Snippet = styled.pre`
+  padding: 20px;
+  margin: 40px 0 40px 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border: 1px solid #eaeaea;
+`
+
 export default ({ children }) =>
-  <pre>
-    <code>{children}</code>
-    <style jsx>{`
-      pre {
-        line-height: 20px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        font-size: 13px;
-        border: 1px solid;
-        padding-left: 20px;
-        padding-bottom: 20px;
-        font-family: Menlo,
-          Monaco,
-          Lucida Console,
-          Liberation Mono,
-          DejaVu Sans Mono,
-          Bitstream Vera Sans Mono,
-          Courier New,
-          monospace,
-          serif;
-        overflow-x: scroll;
-      }
-      code {
-        color: #999;
-      }
-    `}</style>
-  </pre>;
+  <Snippet>
+    <Code>
+      {children}
+    </Code>
+  </Snippet>
