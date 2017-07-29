@@ -12,6 +12,9 @@ export default ({ children }) =>
       <Link href="/about">
         <NavLink>About</NavLink>
       </Link>
+      <Link href="/posts">
+        <NavLink>Posts</NavLink>
+      </Link>
     </Navbar>
     <div className="main">
       {children}
