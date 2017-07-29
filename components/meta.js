@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import NProgress from 'nprogress';
-import Router from 'next/router';
+import Head from 'next/head'
+import NProgress from 'nprogress'
+import Router from 'next/router'
 
-Router.onRouteChangeStart = () => NProgress.start();
-Router.onRouteChangeComplete = () => NProgress.done();
-Router.onRouteChangeError = () => NProgress.done();
+Router.onRouteChangeStart = () => NProgress.start()
+Router.onRouteChangeComplete = () => NProgress.done()
+Router.onRouteChangeError = () => NProgress.done()
 
 export default () =>
   <div>
@@ -34,12 +34,7 @@ export default () =>
       a {
         color: #4b9cd3;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      }
-
-      a:hover {
-        color: #fff;
-        background: #4b9cd3;
-        text-decoration: none;
+        cursor: pointer;
       }
 
       /* loading progress bar styles */
@@ -68,4 +63,4 @@ export default () =>
         transform: rotate(3deg) translate(0px, -4px);
       }
     `}</style>
-  </div>;
+  </div>
