@@ -8,4 +8,4 @@ export default ({ children }) =>
         margin-bottom: 20px;
       }
     `}</style>
-  </p>;
+  </p>

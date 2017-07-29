@@ -3,8 +3,8 @@ export default ({ date }) =>
     {date}
     <style jsx>{`
       div {
-          margin-bottom: 20px;
-          color: #777;
-        }
+        margin-bottom: 20px;
+        color: #777;
+      }
     `}</style>
-  </div>;
+  </div>

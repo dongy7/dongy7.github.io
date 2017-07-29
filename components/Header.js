@@ -1,4 +1,4 @@
-export default ({ title }) => (
+export default ({ title }) =>
   <div>
     <h1>
       {title}
@@ -10,4 +10,3 @@ export default ({ title }) => (
       }
     `}</style>
   </div>
-);

@@ -1,6 +1,8 @@
 export default ({ children }) =>
   <h1>
-    <a href="#">{children}</a>
+    <a href="#">
+      {children}
+    </a>
     <style jsx>{`
       h1 {
         font-weight: 500;
@@ -15,4 +17,4 @@ export default ({ children }) =>
         color: #fff;
       }
     `}</style>
-  </h1>;
+  </h1>
