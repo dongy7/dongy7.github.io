@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 import Arrow from './Arrow'
 
 const Header = styled.header`
@@ -39,11 +40,17 @@ const Nav = styled.div`
   }
 `
 
-export default class Navbar extends React.Component {
+class Navbar extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       toggled: false,
+    }
+  }
+
+  getChildContext() {
+    return {
+      onNavLinkClick: () => this.setState({ toggled: !this.state.toggled }),
     }
   }
 
@@ -65,3 +72,9 @@ export default class Navbar extends React.Component {
     )
   }
 }
+
+Navbar.childContextTypes = {
+  onNavLinkClick: PropTypes.func,
+}
+
+export default Navbar

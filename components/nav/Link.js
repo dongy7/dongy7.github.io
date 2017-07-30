@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const Link = styled.a`
   color: #999;
@@ -13,5 +14,15 @@ const Link = styled.a`
     font-size: 20px;
   }
 `
+
+class NavLink extends React.Component {
+  render() {
+    return <Link onClick={() => this.context.onNavLinkClick()} />
+  }
+}
+
+NavLink.contextTypes = {
+  onNavLinkClick: PropTypes.func,
+}
 
 export default Link
