@@ -20,7 +20,7 @@ const PostDiv = styled.div`
   }
 `
 
-const Date = styled.span`
+const DateSpan = styled.span`
   display: inline-block;
   width: 140px;
   text-align: right;
@@ -41,9 +41,9 @@ const A = styled.a`text-decoration: none;`
 
 const Post = ({ id, date, title }) =>
   <PostDiv>
-    <Date>
+    <DateSpan>
       {date}
-    </Date>
+    </DateSpan>
     <Link href={`/${new Date(date).getFullYear()}/${id}`}>
       <a>
         {title}{' '}
