@@ -7,6 +7,11 @@ const Link = styled.a`
   font-size: 12px;
   font-weight: normal;
   text-transform: uppercase;
+
+  @media screen and (max-width: 950px) {
+    display: block;
+    font-size: 20px;
+  }
 `
 
 export default Link
