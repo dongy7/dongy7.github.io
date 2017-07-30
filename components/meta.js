@@ -23,6 +23,7 @@ injectGlobal`
     color: #4b9cd3;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     cursor: pointer;
+    text-decoration: none;
   }
 
   /* loading progress bar styles */
