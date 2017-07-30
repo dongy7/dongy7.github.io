@@ -8,7 +8,15 @@ const Code = styled.code`
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 `
 
+const stripLeadingNewline = text => {
+  if (text[0] === '\n') {
+    return text.slice(1)
+  } else {
+    return text
+  }
+}
+
 export default ({ children }) =>
   <Code>
-    {children}
+    {stripLeadingNewline(children)}
   </Code>
