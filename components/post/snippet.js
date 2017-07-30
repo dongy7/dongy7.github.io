@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Code from './code'
+import Code from './Code'
 
 const Snippet = styled.pre`
   padding: 20px;

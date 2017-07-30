@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import Link from 'next/prefetch'
-import Page from '../layouts/main'
+import Link from 'next/link'
+import Page from '../layouts/Main'
 import { posts } from '../posts'
 
 export default () =>
@@ -44,7 +44,7 @@ const Post = ({ id, date, title }) =>
     <DateSpan>
       {date}
     </DateSpan>
-    <Link href={`/${new Date(date).getFullYear()}/${id}`}>
+    <Link prefetch href={`/${new Date(date).getFullYear()}/${id}`}>
       <a>
         {title}{' '}
       </a>

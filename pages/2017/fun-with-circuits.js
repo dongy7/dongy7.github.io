@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import Title from '../../components/post/title'
-import Post from '../../layouts/post'
-import { H2, H3 } from '../../components/post/heading'
-import Code from '../../components/post/code'
-import Snippet from '../../components/post/snippet'
-import P from '../../components/post/paragraph'
-import Meta from '../../components/post/meta'
-import Link from '../../components/post/link'
+import Post from '../../layouts/Post'
+import Title from '../../components/post/Title'
+import { H2, H3 } from '../../components/post/Heading'
+import Code from '../../components/post/Code'
+import Snippet from '../../components/post/Snippet'
+import P from '../../components/post/Paragraph'
+import Meta from '../../components/post/Meta'
+import Link from '../../components/post/Link'
 
 export default () =>
   <Post>

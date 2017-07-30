@@ -1,5 +1,5 @@
-import Link from 'next/prefetch'
-import Meta from '../components/meta'
+import Link from 'next/link'
+import Meta from '../components/Meta'
 import Navbar from '../components/nav/Navbar'
 import NavLink from '../components/nav/Link'
 import Container from '../components/Container'
@@ -7,13 +7,13 @@ import Container from '../components/Container'
 export default ({ children }) =>
   <div>
     <Navbar>
-      <Link href="/">
+      <Link prefetch href="/">
         <NavLink first>Home</NavLink>
       </Link>
-      <Link href="/about">
+      <Link prefetch href="/about">
         <NavLink>About</NavLink>
       </Link>
-      <Link href="/posts">
+      <Link prefetch href="/posts">
         <NavLink>Posts</NavLink>
       </Link>
     </Navbar>

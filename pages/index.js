@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import Page from '../layouts/main'
-import Link from 'next/prefetch'
+import Link from 'next/link'
 import Head from 'next/head'
+import Page from '../layouts/Main'
 
 const Home = styled.div`
   position: absolute;
@@ -45,7 +45,7 @@ export default () =>
           <A target="_blank" href="https://www.linkedin.com/in/dongy7/">
             LinkedIn
           </A>
-          <Link href="/posts">
+          <Link prefetch href="/posts">
             <A>Posts</A>
           </Link>
           <A href="mailto:dongy7@gmail.com">Email</A>

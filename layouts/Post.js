@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Page from './main'
+import Page from './Main'
 
 const Article = styled.article`font-size: 14px;`
 
