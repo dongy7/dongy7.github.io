@@ -1,54 +1,52 @@
-import Head from 'next/head';
-import Title from '../../components/post/title';
-import Post from '../../layouts/post';
-import { H2, H3 } from '../../components/post/heading';
-import Code from '../../components/post/code';
-import Snippet from '../../components/post/snippet';
-import P from '../../components/post/paragraph';
-import Meta from '../../components/post/meta';
-import Link from '../../components/post/link';
+import Head from 'next/head'
+import Title from '../../components/post/title'
+import Post from '../../layouts/post'
+import { H2, H3 } from '../../components/post/heading'
+import Code from '../../components/post/code'
+import Snippet from '../../components/post/snippet'
+import P from '../../components/post/paragraph'
+import Meta from '../../components/post/meta'
+import Link from '../../components/post/link'
 
 export default () =>
   <Post>
-    <Head><title>Complex Data Fetching Made Simple With Rx</title></Head>
+    <Head>
+      <title>Complex Data Fetching Made Simple With Rx</title>
+    </Head>
     <Title>Complex Data Fetching Made Simple With Rx</Title>
     <Meta date="June 24, 2017" />
     <P>
       This post assumes a basic understanding of{' '}
-      <Link to="http://reactivex.io/rxjs/">RxJS</Link>.
-      If you don't then, I highly recommend you read the
-      following{' '}
+      <Link to="http://reactivex.io/rxjs/">RxJS</Link>. If you don't then, I
+      highly recommend you read the following{' '}
       <Link to="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754">
         intro
       </Link>{' '}
       that gives you the basic idea behind Rx and observables.
     </P>
     <P>
-      Have you ever had to work with a complex query where
-      you had to chain and nest multiple promises in order to
-      get the data you wanted? I can tell you I have and it can
-      get complex very quickly.
+      Have you ever had to work with a complex query where you had to chain and
+      nest multiple promises in order to get the data you wanted? I can tell you
+      I have and it can get complex very quickly.
     </P>
 
     <P>
-      Consider this query: I want to get the second page of the top
-      stories on Hacker News where each page contains 30 posts.
-      Now, Hacker News provides an excellent real time{' '}
-      <Link to="https://github.com/HackerNews/API">API</Link>, but
-      how do we get the specific posts that we want? The{' '}
+      Consider this query: I want to get the second page of the top stories on
+      Hacker News where each page contains 30 posts. Now, Hacker News provides
+      an excellent real time{' '}
+      <Link to="https://github.com/HackerNews/API">API</Link>, but how do we get
+      the specific posts that we want? The{' '}
       <Link to="https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty">
         endpoint
       </Link>{' '}
-      provided
-      by Firebase simply gives us the id of the top 500 posts for a
+      provided by Firebase simply gives us the id of the top 500 posts for a
       specific category.
     </P>
 
     <P>
-      Let's think about how we would accomplish this in Rx.
-      First, we want to create a stream of the top 500 post
-      ids from the Firebase API. We can do this with the <Code>ajax</Code>{' '}
-      operator provided by <Code>RxDom</Code>.
+      Let's think about how we would accomplish this in Rx. First, we want to
+      create a stream of the top 500 post ids from the Firebase API. We can do
+      this with the <Code>ajax</Code> operator provided by <Code>RxDom</Code>.
     </P>
 
     <Snippet>
@@ -59,8 +57,8 @@ const source = Rx.Observable
     </Snippet>
 
     <P>
-      Let's subscribe to our observable and see what we get
-      by logging to the console:
+      Let's subscribe to our observable and see what we get by logging to the
+      console:
     </P>
 
     <Snippet>
@@ -69,9 +67,7 @@ source.subscribe(x => console.log(x))
 `}
     </Snippet>
 
-    <P>
-      You should see something like this:
-    </P>
+    <P>You should see something like this:</P>
     <Snippet>
       {`
 [object Object] {
@@ -123,11 +119,10 @@ source.subscribe(x => console.log(x))
     </Snippet>
 
     <P>
-      We can see that the data that we're actually interested in,
-      which is the <Code>ids</Code> of the articles is in the {' '}
-      <Code>response</Code> field of the object. Since we are only interested
-      in the <Code>response</Code> field, we can use the <Code>map</Code>{' '}
-      operator:
+      We can see that the data that we're actually interested in, which is the{' '}
+      <Code>ids</Code> of the articles is in the <Code>response</Code> field of
+      the object. Since we are only interested in the <Code>response</Code>{' '}
+      field, we can use the <Code>map</Code> operator:
     </P>
 
     <Snippet>
@@ -138,9 +133,7 @@ const source = Rx.Observable
       `}
     </Snippet>
 
-    <P>
-      You should now see the list of all the IDs returned from the request.
-    </P>
+    <P>You should now see the list of all the IDs returned from the request.</P>
 
     <Snippet>
       {`
@@ -149,20 +142,19 @@ const source = Rx.Observable
     </Snippet>
 
     <P>
-      Now let's think about how we would filter the IDs so that we
-      are working with just the IDs that are in the range specified
-      a page number and the number of items per page. We could simply
-      just fetch all of the articles from the list of IDs and get the
-      articles that we need using array operations. However, using this
-      approach, we are potentially throwing away most of the data that
-      we fetch.
+      Now let's think about how we would filter the IDs so that we are working
+      with just the IDs that are in the range specified a page number and the
+      number of items per page. We could simply just fetch all of the articles
+      from the list of IDs and get the articles that we need using array
+      operations. However, using this approach, we are potentially throwing away
+      most of the data that we fetch.
     </P>
 
     <P>
-      Let's say we have a stream of post IDs. We'll also assume that
-      a page contains 30 posts and we want to get the post IDs for the
-      second page. In this scenario we want to skip the first 30 post IDs
-      and get the next 30 post IDs. Conveniently, Rx provides the{' '}
+      Let's say we have a stream of post IDs. We'll also assume that a page
+      contains 30 posts and we want to get the post IDs for the second page. In
+      this scenario we want to skip the first 30 post IDs and get the next 30
+      post IDs. Conveniently, Rx provides the{' '}
       <Link to="http://reactivex.io/documentation/operators/skip.html">
         skip
       </Link>{' '}
@@ -182,11 +174,10 @@ const source = Rx.Observable
     </Snippet>
 
     <P>
-      When we run this code, you'll see no output in the conole.
-      Why? Remember that we transformed our response into an
-      array of IDs. We aren't dealing with a stream of IDs but
-      rather an array of IDs. So we need to create a new Observable
-      from the response array. We can accomplish this using the{' '}
+      When we run this code, you'll see no output in the conole. Why? Remember
+      that we transformed our response into an array of IDs. We aren't dealing
+      with a stream of IDs but rather an array of IDs. So we need to create a
+      new Observable from the response array. We can accomplish this using the{' '}
       <Link to="http://reactivex.io/documentation/operators/from.html">
         from
       </Link>{' '}
@@ -203,20 +194,18 @@ const source = Rx.Observable
     </Snippet>
 
     <P>
-      Let's try running this code. Again, we get nothing logged to
-      the console. To see why, let's take a look at the second operator.
-      We have mapped our response array into another observable, but we have
-      not subscribed to it. In order to emit the items that are being emitted
-      by our second observable, we need to make use of the{' '}
+      Let's try running this code. Again, we get nothing logged to the console.
+      To see why, let's take a look at the second operator. We have mapped our
+      response array into another observable, but we have not subscribed to it.
+      In order to emit the items that are being emitted by our second
+      observable, we need to make use of the{' '}
       <Link to="http://reactivex.io/documentation/operators/flatmap.html">
         flatMap
       </Link>{' '}
-      operator.
-
-      We are going to use a variant of <Code>flatMap</Code> called{' '}
-      <Code>concatMap</Code>. <Code>concatMap</Code> preserves the order
-      of the items emitted by the observable, which we need because we want
-      to get a certain part of the posts in the ordering.
+      operator. We are going to use a variant of <Code>flatMap</Code> called{' '}
+      <Code>concatMap</Code>. <Code>concatMap</Code> preserves the order of the
+      items emitted by the observable, which we need because we want to get a
+      certain part of the posts in the ordering.
     </P>
 
     <Snippet>
@@ -229,8 +218,8 @@ const source = Rx.Observable
     </Snippet>
 
     <P>
-      Now when we run the code, we get the IDs of posts
-      excluding the first 30 items.
+      Now when we run the code, we get the IDs of posts excluding the first 30
+      items.
     </P>
 
     <Snippet>
@@ -245,8 +234,8 @@ const source = Rx.Observable
     </Snippet>
 
     <P>
-      Now, we just need to get the number posts that are needed
-      for a page. We can use the{' '}
+      Now, we just need to get the number posts that are needed for a page. We
+      can use the{' '}
       <Link to="http://reactivex.io/documentation/operators/take.html">
         take
       </Link>{' '}
@@ -263,9 +252,7 @@ const source = Rx.Observable
       `}
     </Snippet>
 
-    <P>
-      You should now see 30 post IDs in the console.
-    </P>
+    <P>You should now see 30 post IDs in the console.</P>
 
     <Snippet>
       {`
@@ -303,13 +290,12 @@ const source = Rx.Observable
     </Snippet>
 
     <P>
-      Great, now that we have the IDs of the posts
-      that we want to fetch, we need to get the data
-      associated with each post. We can use the item endpoint
-      provided by the Firebase API. We'll use the <Code>ajax</Code>{' '}
-      operator to create a stream of reponse objects. Once again,
-      we'll need to make use of the <Code>concatMap</Code> operator
-      to merge an observable of observables into a single stream.
+      Great, now that we have the IDs of the posts that we want to fetch, we
+      need to get the data associated with each post. We can use the item
+      endpoint provided by the Firebase API. We'll use the <Code>ajax</Code>{' '}
+      operator to create a stream of reponse objects. Once again, we'll need to
+      make use of the <Code>concatMap</Code> operator to merge an observable of
+      observables into a single stream.
     </P>
 
     <Snippet>
@@ -325,8 +311,7 @@ const source = Rx.Observable
     </Snippet>
 
     <P>
-      In the console, you should now see post objects corresponding to the
-      IDs.
+      In the console, you should now see post objects corresponding to the IDs.
     </P>
 
     <Snippet>
@@ -347,16 +332,15 @@ const source = Rx.Observable
     </Snippet>
 
     <P>
-      To make it easy to consume the result of this stream,
-      we'll merge all of the post objects into a single array.
-      We can accomplish this using the{' '}
+      To make it easy to consume the result of this stream, we'll merge all of
+      the post objects into a single array. We can accomplish this using the{' '}
       <Link to="http://reactivex.io/documentation/operators/scan.html">
         scan
       </Link>{' '}
       operator. You can think of <Code>scan</Code> as a <Code>reduce</Code>{' '}
-      where a function is applied to the item emitted by the observable then
-      the result is emitted. In our case, we'll push items from stream onto
-      an array.
+      where a function is applied to the item emitted by the observable then the
+      result is emitted. In our case, we'll push items from stream onto an
+      array.
     </P>
 
     <Snippet>
@@ -376,8 +360,8 @@ const source = Rx.Observable
     </Snippet>
 
     <P>
-      Taking a look at the output, you can see that posts are
-      being accumulated into a single array:
+      Taking a look at the output, you can see that posts are being accumulated
+      into a single array:
     </P>
 
     <Snippet>
@@ -419,13 +403,12 @@ const source = Rx.Observable
     </Snippet>
 
     <P>
-      We're only interested in the array containing all of the posts.
-      We can use the{' '}
+      We're only interested in the array containing all of the posts. We can use
+      the{' '}
       <Link to="http://reactivex.io/documentation/operators/takelast.html">
         takeLast
-      </Link>
-      {' '}operator, which takes the final <Code>n</Code> elements emitted by
-      the
+      </Link>{' '}
+      operator, which takes the final <Code>n</Code> elements emitted by the
       observable.
     </P>
 
@@ -447,11 +430,10 @@ const source = Rx.Observable
     </Snippet>
 
     <P>
-      Now when you look at the output, you should see an
-      array of post items corresponding to the page number.
-      I hope this example gave you an idea of the things
-      you can do with <Code>Rx</Code>. If you want to play
-      around with the example, you can checkout the{' '}
+      Now when you look at the output, you should see an array of post items
+      corresponding to the page number. I hope this example gave you an idea of
+      the things you can do with <Code>Rx</Code>. If you want to play around
+      with the example, you can checkout the{' '}
       <Link to="http://jsbin.com/yezugex/edit?js,console">JSBin</Link>.
     </P>
-  </Post>;
+  </Post>
