@@ -1,11 +1,12 @@
+import styled from 'styled-components'
+
+const Paragraph = styled.p`
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 20px;
+`
+
 export default ({ children }) =>
-  <p>
+  <Paragraph>
     {children}
-    <style jsx>{`
-      p {
-        font-size: 14px;
-        line-height: 24px;
-        margin-bottom: 20px;
-      }
-    `}</style>
-  </p>
+  </Paragraph>

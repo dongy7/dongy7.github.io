@@ -1,39 +1,40 @@
-const H = ({ id, level = 2, fontSize = 16, children }) =>
-  <div>
-    {React.createElement(
+import styled from 'styled-components'
+
+const Div = styled.div`
+  margin: 25px 0;
+  font-family: helvetica neue, helvetica, arial, "lucida grande", sans-serif;
+  &: hover a {
+    visibility: visible;
+  }
+`
+
+const Span = styled.span`
+  position: absolute;
+  margin-left: -15px;
+  width: 15px;
+  &: hover a {
+    visibility: visible;
+  }
+`
+
+const A = styled.a`visibility: hidden;`
+
+const h = ({ id, level = 2, fontsize = 16, children }) =>
+  <Div>
+    {react.createelement(
       `h${level}`,
-      { style: { fontWeight: 500, fontSize } },
-      <span>
-        <a href={`#${id}`} id={id}>
+      { style: { fontweight: 500, fontsize } },
+      <Span>
+        <A href={`#${id}`} id={id}>
           #
-        </a>
-      </span>,
+        </A>
+      </Span>,
       children
     )}
+  </Div>
 
-    <style jsx>{`
-      div {
-        margin: 25px 0;
-        font-family: Helvetica Neue, Helvetica, Arial, "Lucida Grande",
-          sans-serif;
-      }
-      span {
-        position: absolute;
-        margin-left: -15px;
-        width: 15px;
-      }
-      a {
-        visibility: hidden;
-      }
-      div:hover a,
-      span:hover a {
-        visibility: visible;
-      }
-    `}</style>
-  </div>
+const h2 = h
+const h3 = props => h({ ...props, level: 3, fontsize: 14 })
 
-const H2 = H
-const H3 = props => H({ ...props, level: 3, fontSize: 14 })
-
-export default H2
-export { H2, H3 }
+export default h2
+export { h2, h3 }

@@ -1,12 +1,13 @@
+import styled from 'styled-components'
+
+const H1 = styled.h1`
+  font-weight: 200;
+  font-size: 32px;
+`
+
 export default ({ title }) =>
   <div>
-    <h1>
+    <H1>
       {title}
-    </h1>
-    <style jsx>{`
-      h1 {
-        font-weight: 200;
-        font-size: 32px;
-      }
-    `}</style>
+    </H1>
   </div>

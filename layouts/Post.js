@@ -1,19 +1,11 @@
+import styled from 'styled-components'
 import Page from './main'
+
+const Article = styled.article`font-size: 14px;`
 
 export default ({ children }) =>
   <Page>
-    <article>
+    <Article>
       {children}
-    </article>
-    <style jsx>{`
-      article {
-        font-size: 14px;
-      }
-    `}</style>
-    <style jsx global>{`
-      body {
-        width: 100%;
-        overflow-x: hidden;
-      }
-    `}</style>
+    </Article>
   </Page>
