@@ -8,14 +8,10 @@ const Code = styled.code`
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 `
 
-const stripLeadingAndTrailingNewline = text => {
+const stripLeadingNewline = text => {
   let formattedText = text
-  if (text[0] === '\n') {
-    formattedText = text.slice(1)
-  }
-
-  if (text.slice(-1)[0] === '\n') {
-    formattedText = text.slice(0, -1)
+  while (formattedText[0] === '\n') {
+    formattedText = formattedText.slice(1)
   }
 
   return formattedText
@@ -23,5 +19,5 @@ const stripLeadingAndTrailingNewline = text => {
 
 export default ({ children }) =>
   <Code>
-    {stripLeadingAndTrailingNewline(children)}
+    {stripLeadingNewline(children)}
   </Code>
