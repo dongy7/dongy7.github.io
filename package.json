@@ -13,12 +13,12 @@
     "prettier": "prettier --no-semi --single-quote --trailing-comma es5 --write \"{components, layouts, pages}/**/*.js\""
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^1.1.7",
-    "next": "latest",
+    "babel-plugin-styled-components": "^1.5.1",
+    "next": "^6.0.0",
     "nprogress": "^0.2.0",
     "prop-types": "^15.5.10",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "styled-components": "^2.1.1"
   },
   "devDependencies": {
