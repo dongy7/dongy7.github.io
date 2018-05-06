@@ -11,6 +11,12 @@
       "description": "A Facebook Messenger game of truth or lie built using NodeJS",
       "src": "https://github.com/comp585/HotSeatBot",
       "demo": "https://m.me/thehotseatbot"
+    },
+    {
+      "name": "Fund Visualizer",
+      "description": "App for visually tracking fund goals using Google Maps",
+      "src": "https://github.com/dongy7/fund-visualizer",
+      "demo": "https://fund-visualizer.herokuapp.com/"
     }
   ]
 }
