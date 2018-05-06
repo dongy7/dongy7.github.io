@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "deploy": "git subtree push --prefix out origin master",
+    "deploy": "push-dir --dir=out --branch=master",
     "prettier": "prettier --no-semi --single-quote --trailing-comma es5 --write \"{components, layouts, pages}/**/*.js\""
   },
   "dependencies": {
@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@mdx-js/mdx": "^0.8.1",
-    "prettier": "^1.5.3"
+    "prettier": "^1.5.3",
+    "push-dir": "^0.4.1"
   }
 }
