@@ -42,9 +42,9 @@ export default () =>
       <Main>
         <H1>Dong Yeop Lee</H1>
         <Nav>
-          <A target="_blank" href="https://www.linkedin.com/in/dongy7/">
-            LinkedIn
-          </A>
+          <Link prefetch href="/portfolio">
+            <A>Portfolio</A>
+          </Link>
           <Link prefetch href="/posts">
             <A>Posts</A>
           </Link>

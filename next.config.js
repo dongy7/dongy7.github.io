@@ -20,6 +20,7 @@ module.exports = {
       '/': { page: '/' },
       '/about': { page: '/about' },
       '/posts': { page: '/posts' },
+      '/portfolio': { page: '/portfolio' },
       '/2017/fun-with-circuits': { page: '/2017/fun-with-circuits' },
       '/2017/complex-data-fetching-made-simple-with-rx': { page: '/2017/complex-data-fetching-made-simple-with-rx' },
       '/2018/integrating-markdown-in-react-with-mdx': { page: '/2018/integrating-markdown-in-react-with-mdx' },
