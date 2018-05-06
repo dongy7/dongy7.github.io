@@ -51,6 +51,10 @@ injectGlobal`
     opacity: 1.0;
     transform: rotate(3deg) translate(0px, -4px);
   }
+
+  ::selection {
+    background: #79FFE1
+  }
 `
 
 export default () =>
