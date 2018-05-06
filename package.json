@@ -15,6 +15,7 @@
     "prettier": "prettier --no-semi --single-quote --trailing-comma es5 --write \"{components, layouts, pages}/**/*.js\""
   },
   "dependencies": {
+    "@mdx-js/loader": "^0.8.1",
     "babel-plugin-styled-components": "^1.5.1",
     "next": "^6.0.0",
     "nprogress": "^0.2.0",
@@ -24,7 +25,6 @@
     "styled-components": "^2.1.1"
   },
   "devDependencies": {
-    "@mdx-js/loader": "^0.8.1",
     "@mdx-js/mdx": "^0.8.1",
     "prettier": "^1.5.3"
   }

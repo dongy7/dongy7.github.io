@@ -1,6 +1,6 @@
 import Post from '../../layouts/Post'
 import withMarkdownStyle from '../../layouts/withMarkdownStyle'
-import CircuitPost from './fun-with-circuits.md'
+import CircuitPost from './circuits.md'
 
 export default () => {
   const PostContent = withMarkdownStyle(CircuitPost)

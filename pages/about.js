@@ -3,7 +3,7 @@ import Title from '../components/post/Title'
 import P from '../components/post/Paragraph'
 import Link from '../components/post/Link'
 import withMarkdownStyle from '../layouts/withMarkdownStyle'
-import About from './about.md'
+import About from './description.md'
 
 export default () => {
   const Content = withMarkdownStyle(About)
