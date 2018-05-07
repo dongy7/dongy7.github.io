@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Link from 'next/link'
 import Head from 'next/head'
 import Page from '../layouts/Main'
+import Avatar from '../components/main/Avatar'
 
 const Home = styled.div`
   position: absolute;
@@ -33,6 +34,10 @@ const A = styled.a`
   text-decoration: none;
 `
 
+const AvDiv = styled.div`
+  margin-top: 20px;
+`
+
 export default () =>
   <Page>
     <Head>
@@ -41,6 +46,13 @@ export default () =>
     <Home>
       <Main>
         <H1>Dong Yeop Lee</H1>
+        <AvDiv>
+          <Avatar
+            width={60}
+            height={60}
+            url="static/avatar.png"
+          />
+        </AvDiv>
         <Nav>
           <Link prefetch href="/portfolio">
             <A>Portfolio</A>
