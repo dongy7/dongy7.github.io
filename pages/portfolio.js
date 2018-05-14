@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Page from '../layouts/Portfolio'
+import Page from '../layouts/Main'
 import Title from '../components/post/Title'
 import Description from '../components/port/Description'
 import Header from '../components/port/Header'
@@ -16,7 +16,7 @@ export default () => {
     margin-bottom: 50px;
   `
   return (
-    <Page>
+    <Page project>
       <div className="portfolio">
         <MainTitleSection>
           <Title>Portfolio</Title>
