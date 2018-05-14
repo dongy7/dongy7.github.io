@@ -3369,6 +3369,13 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-animated-term@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/react-animated-term/-/react-animated-term-1.0.10.tgz#6c3adcae8378e6c719abde5f92264ad26bf8e2e8"
+  dependencies:
+    babel-runtime "^6.26.0"
+    prop-types "^15.6.1"
+
 react-dom@^16.0.0:
   version "16.3.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.3.2.tgz#cb90f107e09536d683d84ed5d4888e9640e0e4df"
