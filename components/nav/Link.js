@@ -16,8 +16,12 @@ const Link = styled.a`
 `
 
 class NavLink extends React.Component {
+  super(props) {
+    constructor(props)
+  }
+
   render() {
-    return <Link onClick={() => this.context.onNavLinkClick()} />
+    return <Link onClick={() => this.context.onNavLinkClick()} {...this.props} />
   }
 }
 

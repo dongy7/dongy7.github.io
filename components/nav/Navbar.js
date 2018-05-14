@@ -7,13 +7,18 @@ const Header = styled.header`
   margin: auto;
   padding: 30px 0;
   position: relative;
+  display: flex;
+  flex-direction: row;
 
   @media screen and (max-width: 950px) {
+    display: block;
     text-align: center;
   }
 `
 
 const NavContainer = styled.div`
+  width: 100%;
+
   @media screen and (max-width: 950px) {
     display: ${props => (props.toggled ? 'block' : 'none')};
     padding: 20px;
@@ -25,18 +30,42 @@ const NavContainer = styled.div`
 `
 
 const Nav = styled.div`
+  display: flex;
   margin-top: -2px;
   padding-right: 0;
-  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  justify-content: space-between;
+  width: 100%;
 
   @media screen and (max-width: 950px) {
+    display: block;
     position: relative;
     padding: 0;
     left: 0;
     top: 20px;
     transform: none;
+  }
+`
+
+export const LeftNav = styled.div`
+  display: flex;
+  flex-direction: row;
+  left: 0px;
+
+  @media screen and (max-width: 950px) {
+    display: flex;
+    flex-direction: column;
+  }
+`
+
+export const RightNav = styled.div`
+  display: flex;
+  flex-direction: row;
+  right: 50px;
+
+  @media screen and (max-width: 950px) {
+    display: flex;
+    flex-direction: column;
   }
 `
 
