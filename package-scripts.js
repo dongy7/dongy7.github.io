@@ -11,15 +11,23 @@ const publish = function (src, branch) {
   }
 
   ghpages.publish(src, options, (err) => {
-    console.error(err)
+    if (err) {
+      console.error(err)
+    }
   })
 }
 
 module.exports = {
   scripts: {
+    build: {
+      default: series(
+        'next build',
+        'next export',
+        'cp CNAME out/'
+      )
+    },
     publish: {
       default: series(
-        'cp CNAME out/',
         publish('out', 'master')
       )
     }

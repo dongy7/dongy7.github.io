@@ -1,17 +1,15 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "Personal Blog",
+  "description": "Personal website and blog",
   "main": "app.js",
-  "repository": "https://github.com/dongy7/blog.git",
+  "repository": "https://github.com/dongy7/dongy7.github.io.git",
   "author": "Dong Yeop Lee",
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "next build",
     "start": "next start",
-    "export": "next export",
-    "deploy": "push-dir --dir=out --branch=master",
+    "build": "nps build",
     "publish": "nps publish",
     "prettier": "prettier --no-semi --single-quote --trailing-comma es5 --write \"{components, layouts, pages}/**/*.js\""
   },

@@ -26,6 +26,11 @@ export default ({ children }) =>
           </NavLink>
         </Link>
         <Link>
+          <NavLink href="https://www.linkedin.com/in/dongy7/">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </NavLink>
+        </Link>
+        <Link>
           <NavLink href="mailto:dong@dongyeop.com">
             <i class="fas fa-envelope fa-lg"></i>
           </NavLink>
