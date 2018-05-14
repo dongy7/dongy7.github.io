@@ -12,6 +12,7 @@
     "start": "next start",
     "export": "next export",
     "deploy": "push-dir --dir=out --branch=master",
+    "publish": "nps publish",
     "prettier": "prettier --no-semi --single-quote --trailing-comma es5 --write \"{components, layouts, pages}/**/*.js\""
   },
   "dependencies": {
@@ -28,6 +29,9 @@
   },
   "devDependencies": {
     "@mdx-js/mdx": "^0.8.1",
+    "gh-pages": "^1.1.0",
+    "nps": "^5.9.0",
+    "nps-utils": "^1.5.0",
     "prettier": "^1.5.3",
     "push-dir": "^0.4.1"
   }
