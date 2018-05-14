@@ -1,6 +1,6 @@
 import Post from '../../layouts/Post'
 import withMarkdownStyle from '../../layouts/withMarkdownStyle'
-import MdxPost from './mdx.md'
+import MdxPost from './mdx.mdx'
 
 export default () => {
   const PostContent = withMarkdownStyle(MdxPost)
