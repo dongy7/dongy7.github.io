@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const Link = styled.a`
   color: #999;
   padding: 10px;
-  padding-left: ${props => (props.first ? '0px' : '10px')};
+  padding-left: 10px;
   font-size: 12px;
   font-weight: normal;
   text-transform: uppercase;
