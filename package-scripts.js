@@ -19,6 +19,7 @@ module.exports = {
   scripts: {
     publish: {
       default: series(
+        'cp CNAME out/',
         publish('out', 'master')
       )
     }
