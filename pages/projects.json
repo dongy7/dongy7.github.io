@@ -1,6 +1,18 @@
 {
   "projects": [
     {
+      "name": "React Animated Terminal",
+      "description": "React component for rendering animated terminals",
+      "src": "https://github.com/dongy7/react-animated-term",
+      "demo": "https://codesandbox.io/s/jnyrowwov"
+    },
+    {
+      "name": "Twitch Chat CLI",
+      "description": "CLI for reading live Twitch chat",
+      "src": "https://github.com/dongy7/twitch-chat-cli",
+      "demo": "https://raw.githubusercontent.com/dongy7/twitch-chat-cli/master/demo.gif"
+    },
+    {
       "name": "Hackernews Client",
       "description": "An Hackernews client built with RxJS and React.",
       "src": "https://github.com/dongy7/HackerNews",
