@@ -1,6 +1,6 @@
 import Terminal from '../../components/post/Terminal'
 
-The [Next](https://nextjs.org/) framework is great for creating websites with [React](https://reactjs.org/). In fact this [blog](https://github.com/dongy7/dongy7.github.io) is built with Next. But one thing that I have missed about using static site frameworks such as [Jekyll](https://jekyllrb.com/) is the abillity to write content in Markdown. JSX syntax is nice for defining declarative components, but can be awkward to use when mixed with text. Here is an example from one of my previous posts written with JSX:
+The [Next](https://nextjs.org/) framework is great for creating websites with [React](https://reactjs.org/). In fact this [blog](https://github.com/dongy7/dongy7.github.io) is built with Next. But one thing that I have missed about using static site frameworks such as [Jekyll](https://jekyllrb.com/) is the ability to write content in Markdown. JSX syntax is nice for defining declarative components, but can be awkward to use when mixed with text. Here is an example from one of my previous posts written with JSX:
 
 ```
 <P>
@@ -10,7 +10,7 @@ The [Next](https://nextjs.org/) framework is great for creating websites with [R
 </P>
 ```
 
-As you can see JSX introduces some unnautrual breaks in the text and is just hard to write even with editor integration for JSX. In comparison, the following is an equivalent markdown version:
+As you can see JSX introduces breaks in the text and is hard to write even with editor integration for JSX. In comparison, the following is an equivalent markdown version:
 
 ```
 We can see that the data that we're actually interested in, which are the `ids` of the articles
@@ -79,7 +79,7 @@ module.exports = {
 }
 ```
 
-Next, compose your content and save it to a `markdown` file and just import it and use it like a normal React compnent:
+Next, compose your content and save it to a `markdown` file and just import it and use it like a normal React component:
 
 ```
 import MyBlogPost from './MyBlogPost.md'

@@ -200,7 +200,7 @@ You should now see 30 post IDs in the console.
 
 Great, now that we have the IDs of the posts that we want to fetch, we
 need to get the data associated with each post. We can use the item
-endpoint provided by the Firebase API. We'll use the `ajax` operator to create a stream of reponse objects. Once again, we'll need to make use of the `concatMap` operator to merge an observable of observables into a single stream.
+endpoint provided by the Firebase API. We'll use the `ajax` operator to create a stream of response objects. Once again, we'll need to make use of the `concatMap` operator to merge an observable of observables into a single stream.
 
 ```
 const source = Rx.Observable
