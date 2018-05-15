@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Item = styled.li`
+const Card = styled.div`
   width: calc(50% - 10px);
   margin: 10px 0px;
 
@@ -9,4 +9,4 @@ const Item = styled.li`
   }
 `
 
-export default Item
+export default Card

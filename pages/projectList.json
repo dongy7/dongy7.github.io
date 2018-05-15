@@ -2,31 +2,31 @@
   "projects": [
     {
       "name": "React Animated Terminal",
-      "description": "React component for rendering animated terminals",
+      "description": "React component for rendering animated terminals.",
       "src": "https://github.com/dongy7/react-animated-term",
       "demo": "https://codesandbox.io/s/jnyrowwov"
     },
     {
       "name": "Twitch Chat CLI",
-      "description": "CLI for reading live Twitch chat",
+      "description": "CLI for reading live Twitch chat built with NodeJS.",
       "src": "https://github.com/dongy7/twitch-chat-cli",
       "demo": "https://raw.githubusercontent.com/dongy7/twitch-chat-cli/master/demo.gif"
     },
     {
       "name": "Hackernews Client",
-      "description": "An Hackernews client built with RxJS and React.",
+      "description": "A Hackernews client built with RxJS and React.",
       "src": "https://github.com/dongy7/HackerNews",
       "demo": "https://hnews-client.herokuapp.com/"
     },
     {
       "name": "HotSeat",
-      "description": "A Facebook Messenger game of truth or lie built using NodeJS",
+      "description": "A Facebook Messenger game of truth or lie built using NodeJS.",
       "src": "https://github.com/comp585/HotSeatBot",
       "demo": "https://m.me/thehotseatbot"
     },
     {
       "name": "Fund Visualizer",
-      "description": "App for visually tracking fund goals using Google Maps",
+      "description": "App for visually tracking fund goals using Google Maps.",
       "src": "https://github.com/dongy7/fund-visualizer",
       "demo": "https://fund-visualizer.herokuapp.com/"
     }

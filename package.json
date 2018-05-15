@@ -15,8 +15,10 @@
   },
   "dependencies": {
     "@mdx-js/loader": "^0.8.1",
+    "@zeit/next-sass": "^0.2.0",
     "babel-plugin-styled-components": "^1.5.1",
     "next": "^6.0.0",
+    "node-sass": "^4.9.0",
     "nprogress": "^0.2.0",
     "prop-types": "^15.5.10",
     "react": "^16.0.0",

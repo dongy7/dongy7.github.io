@@ -54,8 +54,8 @@ export default () =>
           />
         </AvDiv>
         <Nav>
-          <Link prefetch href="/portfolio">
-            <A>Portfolio</A>
+          <Link prefetch href="/projects">
+            <A>Projects</A>
           </Link>
           <Link prefetch href="/posts">
             <A>Posts</A>

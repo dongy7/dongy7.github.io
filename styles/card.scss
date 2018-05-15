@@ -1,0 +1,153 @@
+$card-padding: 24px !default;
+$card-bg-color: #fff !default;
+
+$num-cols: 12 !default;
+$gutter-width: 1.5rem !default;
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width*2)/3 !default;
+
+// Z-levels
+/* 2dp elevation modified*/
+.z-depth-1 {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+              0 3px 1px -2px rgba(0,0,0,0.12),
+              0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.card-panel {
+  transition: box-shadow .25s;
+  padding: $card-padding;
+  margin: $element-top-margin 0 $element-bottom-margin 0;
+  border-radius: 2px;
+  @extend .z-depth-1;
+  background-color: $card-bg-color;
+}
+
+.card {
+  position: relative;
+  margin: $element-top-margin 0 $element-bottom-margin 0;
+  background-color: $card-bg-color;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+  @extend .z-depth-1;
+
+
+  .card-title {
+    font-size: 24px;
+    font-weight: 300;
+    &.activator {
+      cursor: pointer;
+    }
+  }
+
+  // Card Sizes
+  &.xsmall, &.small, &.medium, &.large {
+    position: relative;
+
+    .card-image {
+      max-height: 60%;
+      overflow: hidden;
+    }
+    .card-image + .card-content {
+      max-height: 40%;
+    }
+    .card-content {
+      max-height: 100%;
+      overflow: hidden;
+    }
+    .card-action {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &.xsmall {
+    height: 175px;
+  }
+
+  &.small {
+    height: 300px;
+  }
+
+  &.medium {
+    height: 400px;
+  }
+
+  &.large {
+    height: 500px;
+  }
+
+  // Horizontal Cards
+  &.horizontal {
+    &.small, &.medium, &.large {
+      .card-image {
+        height: 100%;
+        max-height: none;
+        overflow: visible;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+
+    display: flex;
+
+    .card-image {
+      max-width: 50%;
+      img {
+        border-radius: 2px 0 0 2px;
+        max-width: 100%;
+        width: auto;
+      }
+    }
+
+    .card-stacked {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      position: relative;
+
+      .card-content {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .card-content {
+    padding: $card-padding;
+    border-radius: 0 0 2px 2px;
+    flex-grow: 1;
+
+    p {
+      margin: 0;
+    }
+    .card-title {
+      display: block;
+      line-height: 32px;
+      margin-bottom: 8px;
+
+      i {
+        line-height: 32px;
+      }
+    }
+  }
+
+  .card-action {
+    &:last-child {
+      border-radius: 0 0 2px 2px;
+    }
+    background-color: inherit; // Use inherit to inherit color classes
+    border-top: 1px solid rgba(160,160,160,.2);
+    position: relative;
+    padding: 16px $card-padding;
+
+    a:not(.btn):not(.btn-large):not(.btn-floating) {
+      margin-right: $card-padding;
+      transition: color .3s ease;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,6 +1,6 @@
-const prod = process.env.NODE_ENV === 'production'
+const withSass = require('@zeit/next-sass')
 
-module.exports = {
+const config = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   webpack: (config, { defaultLoaders }) => {
     config.module.rules.push({
@@ -20,11 +20,12 @@ module.exports = {
       '/': { page: '/' },
       '/about': { page: '/about' },
       '/posts': { page: '/posts' },
-      '/portfolio': { page: '/portfolio' },
+      '/projects': { page: '/projects' },
       '/2017/fun-with-circuits': { page: '/2017/fun-with-circuits' },
       '/2017/complex-data-fetching-made-simple-with-rx': { page: '/2017/complex-data-fetching-made-simple-with-rx' },
       '/2018/integrating-markdown-in-react-with-mdx': { page: '/2018/integrating-markdown-in-react-with-mdx' },
     }
-  },
-  assetPrefix: prod ? '' : '',
+  }
 }
+
+module.exports = withSass(config)

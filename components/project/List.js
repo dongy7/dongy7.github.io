@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
-const List = styled.ul`
+const List = styled.div`
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   -webpack-box-pack: justify;
   justify-content: space-between;
