@@ -53,7 +53,8 @@ injectGlobal`
   }
 
   ::selection {
-    background: #79FFE1
+    background: #33A9FF;
+    color: white;
   }
 `
 
