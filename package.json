@@ -11,6 +11,7 @@
     "start": "next start",
     "build": "nps build",
     "publish": "nps publish",
+    "deploy": "yarn run build && yarn run publish",
     "prettier": "prettier --no-semi --single-quote --trailing-comma es5 --write \"{components, layouts, pages}/**/*.js\""
   },
   "dependencies": {
