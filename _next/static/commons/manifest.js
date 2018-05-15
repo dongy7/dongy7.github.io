@@ -90,7 +90,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "09b48af865fe63173393"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5ef84b3ce57dbb656ced"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -755,7 +755,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_document.js","2":"bundles/pages/_error.js","3":"bundles/pages/_app.js","5":"bundles/pages/index.js","6":"bundles/pages/projects.js"}[chunkId]||chunkId) + "-" + {"0":"55f4110577a974b5b83d","1":"3697a940b496b699158b","2":"99988b845fbb92323b21","3":"e009bd62dc1cfe2c8faa","5":"753ac6a9204d891c4d54","6":"390f00db21c536257dad"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_document.js","2":"bundles/pages/_error.js","3":"bundles/pages/_app.js","7":"bundles/pages/2018/integrating-markdown-in-react-with-mdx.js"}[chunkId]||chunkId) + "-" + {"0":"6b611b1e1ed3b163a3e1","1":"3697a940b496b699158b","2":"99988b845fbb92323b21","3":"e009bd62dc1cfe2c8faa","7":"607dd170e74f7bcb2164"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
