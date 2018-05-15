@@ -1,3 +1,4 @@
+import LazyLoad from 'react-lazyload'
 import Terminal from '../../components/post/Terminal'
 
 The [Next](https://nextjs.org/) framework is great for creating websites with [React](https://reactjs.org/). In fact this [blog](https://github.com/dongy7/dongy7.github.io) is built with Next. But one thing that I have missed about using static site frameworks such as [Jekyll](https://jekyllrb.com/) is the ability to write content in Markdown. JSX syntax is nice for defining declarative components, but can be awkward to use when mixed with text. Here is an example from one of my previous posts written with JSX:
@@ -20,29 +21,33 @@ we can use the `map` operator:
 
 Markdown feels much better to write for things like blog posts where the majority of the content is text. But how do we integrate Markdown with JSX? Fortunately, we can use the [MDX](https://github.com/mdx-js/mdx) library to render JSX in Markdown. First install the `MDX` library:
 
-<Terminal
-  lines={[
-    {
-      text: 'npm install --save-dev @mdx-js/loader @mdx-js/mdx',
-      cmd: true
-    }
-  ]}
-  interval={50}
-  height={120}
-/>
+<LazyLoad height={120}>
+  <Terminal
+    lines={[
+      {
+        text: 'npm install --save-dev @mdx-js/loader @mdx-js/mdx',
+        cmd: true
+      }
+    ]}
+    interval={50}
+    height={120}
+  />
+</LazyLoad>
 
 or if you use [Yarn](https://yarnpkg.com/en/):
 
-<Terminal
-  lines={[
-    {
-      text: 'yarn add --dev @mdx-js/loader @mdx-js/mdx',
-      cmd: true
-    }
-  ]}
-  interval={50}
-  height={120}
-/>
+<LazyLoad height={120}>
+  <Terminal
+    lines={[
+      {
+        text: 'yarn add --dev @mdx-js/loader @mdx-js/mdx',
+        cmd: true
+      }
+    ]}
+    interval={50}
+    height={120}
+  />
+</LazyLoad>
 
 
 If you are using `Next`, add this to your `next.config.js` so that the `MDX` loader is used to load `jsx` and `md` files.
