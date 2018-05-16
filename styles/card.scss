@@ -29,6 +29,7 @@ $element-bottom-margin: ($gutter-width*2)/3 !default;
   background-color: $card-bg-color;
   transition: box-shadow .25s;
   border-radius: 2px;
+  width: 100%;
   @extend .z-depth-1;
 
 
@@ -119,7 +120,6 @@ $element-bottom-margin: ($gutter-width*2)/3 !default;
   .card-content {
     padding: $card-padding;
     border-radius: 0 0 2px 2px;
-    flex-grow: 1;
 
     p {
       margin: 0;

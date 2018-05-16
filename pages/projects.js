@@ -21,7 +21,7 @@ export default () => {
         <List>
           {projects.map(({ name, description, src, demo }) =>
             <Card>
-              <div className="card" key={name}>
+              <div className="card xsmall" key={name}>
                 <div className="card-content">
                   <span className="card-title">{name}</span>
                   <p>{description}</p>
