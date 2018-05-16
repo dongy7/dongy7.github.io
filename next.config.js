@@ -1,9 +1,13 @@
 const withSass = require('@zeit/next-sass')
 const withCSS = require('@zeit/next-css')
+const commonsChunkConfig = require('@zeit/next-css/commons-chunk-config')
 
 const config = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
-  webpack: (config, { defaultLoaders }) => {
+  webpack: (config, { defaultLoaders, isServer }) => {
+    if (!isServer) {
+      config = commonsChunkConfig(config, /\.(sass|scss|css)$/)
+    }
     config.module.rules.push({
       test: /\.mdx?$/,
       use: [
@@ -29,4 +33,4 @@ const config = {
   }
 }
 
-module.exports = withSass(withCSS(config))
+module.exports = withCSS(withSass(config))
