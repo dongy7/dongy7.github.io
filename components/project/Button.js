@@ -4,6 +4,7 @@ const Button = styled.a`
   border-radius: 3px;
   padding: 0.25em 1em;
   margin: 0 0.5em;
+  margin-left: ${props => props.first ? 0 : '0.5em'};
   background: transparent;
   color: #bd10e0;
   border: 2px solid #bd10e0;

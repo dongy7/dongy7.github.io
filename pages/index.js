@@ -4,7 +4,6 @@ import Head from 'next/head'
 import Page from '../layouts/Main'
 import Avatar from '../components/main/Avatar'
 import 'react-animated-term/dist/react-animated-term.css'
-import '../styles/card.scss'
 
 const Home = styled.div`
   position: absolute;

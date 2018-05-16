@@ -1,8 +1,13 @@
 import styled from 'styled-components'
 import Page from '../layouts/Main'
 import Title from '../components/post/Title'
+import Description from '../components/project/Description'
+import Header from '../components/project/Header'
+import Item from '../components/project/Item'
 import List from '../components/project/List'
-import Card from '../components/project/Card'
+import Name from '../components/project/Name'
+import Project from '../components/project/Project'
+import Footer from '../components/project/Footer'
 import Button from '../components/project/Button'
 import { projects } from './projectList'
 
@@ -20,18 +25,18 @@ export default () => {
         </MainTitleSection>
         <List>
           {projects.map(({ name, description, src, demo }) =>
-            <Card>
-              <div className="card xsmall" key={name}>
-                <div className="card-content">
-                  <span className="card-title">{name}</span>
-                  <p>{description}</p>
-                </div>
-                <div className="card-action">
-                  <Button href={src}>Source</Button>
+            <Item>
+              <Project>
+                <Header>
+                  <Name>{name}</Name>
+                </Header>
+                <Description>{description}</Description>
+                <Footer>
+                  <Button href={src} first>Source</Button>
                   <Button href={demo}>Demo</Button>
-                </div>
-              </div>
-            </Card>
+                </Footer>
+              </Project>
+            </Item>
           )}
         </List>
       </div>
