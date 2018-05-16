@@ -5,7 +5,6 @@ import List from '../components/project/List'
 import Card from '../components/project/Card'
 import Button from '../components/project/Button'
 import { projects } from './projectList'
-import '../styles/card.scss'
 
 export default () => {
   const MainTitleSection = styled.div`
