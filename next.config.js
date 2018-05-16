@@ -1,4 +1,5 @@
 const withSass = require('@zeit/next-sass')
+const withCSS = require('@zeit/next-css')
 
 const config = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
@@ -28,4 +29,4 @@ const config = {
   }
 }
 
-module.exports = withSass(config)
+module.exports = withSass(withCSS(config))

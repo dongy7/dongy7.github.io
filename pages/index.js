@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Page from '../layouts/Main'
 import Avatar from '../components/main/Avatar'
+import 'react-animated-term/dist/react-animated-term.css'
 
 const Home = styled.div`
   position: absolute;
