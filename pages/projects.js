@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Head from 'next/head'
 import Page from '../layouts/Main'
 import Title from '../components/post/Title'
 import Description from '../components/project/Description'
@@ -19,6 +20,9 @@ export default () => {
 
   return (
     <Page project>
+      <Head>
+        <title>Projects</title>
+      </Head>
       <div className="portfolio">
         <MainTitleSection>
           <Title>Projects</Title>

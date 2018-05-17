@@ -1,10 +1,14 @@
 import styled from 'styled-components'
+import Head from 'next/head'
 import Link from 'next/link'
 import Page from '../layouts/Main'
 import { posts } from '../posts'
 
 export default () =>
   <Page>
+    <Head>
+      <title>Posts</title>
+    </Head>
     <div className="posts">
       {posts.map(({ id, date, title }) =>
         <Post id={id} key={id} date={date} title={title} />
