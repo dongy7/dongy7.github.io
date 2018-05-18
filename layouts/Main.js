@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Router from 'next/router'
 import Meta from '../components/Meta'
 import Navbar from '../components/nav/Navbar'
 import { LeftNav, RightNav } from '../components/nav/Navbar'

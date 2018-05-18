@@ -2,9 +2,13 @@ import { injectGlobal } from 'styled-components'
 import Head from 'next/head'
 import NProgress from 'nprogress'
 import Router from 'next/router'
+import * as gtag from '../lib/gtag'
 
 Router.onRouteChangeStart = () => NProgress.start()
-Router.onRouteChangeComplete = () => NProgress.done()
+Router.onRouteChangeComplete = (url) => {
+  NProgress.done()
+  gtag.pageview(url)
+}
 Router.onRouteChangeError = () => NProgress.done()
 
 injectGlobal`
