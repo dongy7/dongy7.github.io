@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Post from '../../layouts/Post'
-import RxPost from './rx.md'
+import RxPost from '../../markdown/2017/complex-data-fetching-made-simple-with-rx.md'
 import withMarkdownStyle from '../../layouts/withMarkdownStyle'
 
 export default () => {
