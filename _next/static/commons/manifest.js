@@ -90,7 +90,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "38d87ae0a6e6c32c475e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "14012af3996128c6048e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -755,7 +755,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_document.js","2":"bundles/pages/_error.js","3":"bundles/pages/_app.js","5":"bundles/pages/posts.js","6":"bundles/pages/2018/integrating-markdown-in-react-with-mdx.js","7":"bundles/pages/index.js","8":"bundles/pages/projects.js","9":"bundles/pages/2017/complex-data-fetching-made-simple-with-rx.js","10":"bundles/pages/2017/fun-with-circuits.js"}[chunkId]||chunkId) + "-" + {"0":"7d4913d798450ced0e45","1":"9f224e1c3f49f4217472","2":"99988b845fbb92323b21","3":"e009bd62dc1cfe2c8faa","5":"830a64a20bccb4d257a1","6":"3bed0cc1dda10ddbd907","7":"131c8c5d1fcc10746d01","8":"76797cbbcec27fc4aa35","9":"428c97335bda944ded9a","10":"9137cfbfbae31783baaf"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_document.js","2":"bundles/pages/_error.js","3":"bundles/pages/_app.js","5":"bundles/pages/index.js","6":"bundles/pages/projects.js","8":"bundles/pages/about.js"}[chunkId]||chunkId) + "-" + {"0":"a38f15ff3fdb72f00569","1":"9f224e1c3f49f4217472","2":"99988b845fbb92323b21","3":"e009bd62dc1cfe2c8faa","5":"ee636549c37c893a77f0","6":"165bcb4b6ee58c6ce33d","8":"a43898feb0e44ffc35d5"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
