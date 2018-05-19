@@ -51,7 +51,7 @@ export default () =>
           <Avatar
             width={60}
             height={60}
-            url="static/avatar.png"
+            url="static/avatar.jpg"
           />
         </AvDiv>
         <Nav>
