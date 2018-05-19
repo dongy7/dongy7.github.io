@@ -13,8 +13,8 @@
       "demo": "https://raw.githubusercontent.com/dongy7/twitch-chat-cli/master/demo.gif"
     },
     {
-      "name": "Hackernews Client",
-      "description": "A Hackernews client built with RxJS and React.",
+      "name": "Hacker News Reader",
+      "description": "A single page app for reading Hacker News built with RxJS and React.",
       "src": "https://github.com/dongy7/HackerNews",
       "demo": "https://hnews-client.herokuapp.com/"
     },
@@ -29,6 +29,12 @@
       "description": "App for visually tracking fund goals using Google Maps.",
       "src": "https://github.com/dongy7/fund-visualizer",
       "demo": "https://fund-visualizer.herokuapp.com/"
+    },
+    {
+      "name": "360 Life Stream",
+      "description": "Electron app for streaming live panoramic video.",
+      "src": "https://github.com/360ls/desktop",
+      "demo": "https://360ls.github.io/360ls/"
     }
   ]
 }

@@ -29,7 +29,7 @@ export default () => {
         </MainTitleSection>
         <List>
           {projects.map(({ name, description, src, demo }) =>
-            <Item>
+            <Item key={name}>
               <Project>
                 <Header>
                   <Name>{name}</Name>
