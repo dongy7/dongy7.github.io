@@ -1,4 +1,4 @@
-This post assumes that you have a basic understanding of [bitwise]('https://en.wikipedia.org/wiki/Bitwise_operation') operations. I’ll also be using [TypeScript](https://www.typescriptlang.org/docs/tutorial.html) in my examples because it offers a very nice type system to work with. If you know JavaScript, then you’ll be able to follow along with a basic understanding of the type system offered by TypeScript.
+This post assumes that you have a basic understanding of [bitwise](https://en.wikipedia.org/wiki/Bitwise_operation) operations. I’ll also be using [TypeScript](https://www.typescriptlang.org/docs/tutorial.html) in my examples because it offers a very nice type system to work with. If you know JavaScript, then you’ll be able to follow along with a basic understanding of the type system offered by TypeScript.
 
 I’ve been solving various problems on the [Advent of Code](http://adventofcode.com/) and I came
 across a pretty interesting problem on [day 7](http://adventofcode.com/2015/day/7).
