@@ -7,6 +7,12 @@
       "demo": "https://codesandbox.io/s/62w3w6j8n3"
     },
     {
+      "name": "RNN Password Vault Cracker",
+      "description": "RNN based approach to crack honey encrypted password vaults",
+      "src": "https://github.com/dongy7/password/",
+      "demo": "https://github.com/dongy7/password/blob/master/Cracking_Password_Vaults_RNN.pdf"
+    },
+    {
       "name": "Twitch Chat CLI",
       "description": "CLI for reading live Twitch chat built with NodeJS.",
       "src": "https://github.com/dongy7/twitch-chat-cli",
@@ -25,16 +31,16 @@
       "demo": "https://m.me/thehotseatbot"
     },
     {
-      "name": "Fund Visualizer",
-      "description": "App for visually tracking fund goals using Google Maps.",
-      "src": "https://github.com/dongy7/fund-visualizer",
-      "demo": "https://fund-visualizer.herokuapp.com/"
-    },
-    {
       "name": "360 Life Stream",
       "description": "Electron app for streaming live panoramic video.",
       "src": "https://github.com/360ls/desktop",
       "demo": "https://360ls.github.io/360ls/"
+    },
+    {
+      "name": "Fund Visualizer",
+      "description": "App for visually tracking fund goals using Google Maps.",
+      "src": "https://github.com/dongy7/fund-visualizer",
+      "demo": "https://fund-visualizer.herokuapp.com/"
     }
   ]
 }
