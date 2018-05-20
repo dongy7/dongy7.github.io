@@ -90,7 +90,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ea85ab160b34b93f1653"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b9aaa605b98d880e1dbf"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -755,7 +755,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_document.js","2":"bundles/pages/_error.js","3":"bundles/pages/_app.js","5":"bundles/pages/posts.js","6":"bundles/pages/about.js","7":"bundles/pages/2018/integrating-markdown-in-react-with-mdx.js","8":"bundles/pages/2017/complex-data-fetching-made-simple-with-rx.js"}[chunkId]||chunkId) + "-" + {"0":"6b611b1e1ed3b163a3e1","1":"9f224e1c3f49f4217472","2":"99988b845fbb92323b21","3":"e009bd62dc1cfe2c8faa","5":"619cfeec1e6792b2fc8a","6":"eaa48c676cee46355046","7":"ddc24534c075a64bfedf","8":"2155ff76ec6129bb3ef1"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "" + ({"0":"main.js","1":"bundles/pages/_document.js","2":"bundles/pages/_error.js","3":"bundles/pages/_app.js","6":"bundles/pages/projects.js"}[chunkId]||chunkId) + "-" + {"0":"6b611b1e1ed3b163a3e1","1":"9f224e1c3f49f4217472","2":"99988b845fbb92323b21","3":"e009bd62dc1cfe2c8faa","6":"e90e0f47d0ddfe91b170"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
