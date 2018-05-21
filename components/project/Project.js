@@ -5,11 +5,11 @@ const Project = styled.div`
   flex-direction: column;
   height: 100%;
   text-align: left;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+  box-shadow: 0 2px 4px rgba(3,27,78,.06);
   padding: 5px 5px 5px 15px;
-  transition: border-color 200ms ease-in-out;
+  transition: box-shadow 225ms linear;
   :hover {
-    border : 1px solid #333;
+    box-shadow: 0 10px 20px rgba(3,27,78,.1)
   }
 `
 
