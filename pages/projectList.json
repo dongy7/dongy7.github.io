@@ -8,7 +8,7 @@
     },
     {
       "name": "RNN Password Vault Cracker",
-      "description": "RNN based approach to crack honey encrypted password vaults",
+      "description": "RNN based system for detecting decoy password vaults.",
       "src": "https://github.com/dongy7/password/",
       "demo": "https://github.com/dongy7/password/blob/master/Cracking_Password_Vaults_RNN.pdf"
     },

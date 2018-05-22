@@ -19,6 +19,9 @@ export default ({ children, project }) => {
           <Link prefetch href="/about">
             <NavLink>About</NavLink>
           </Link>
+          <Link prefetch href="/projects">
+            <NavLink>Projects</NavLink>
+          </Link>
           <Link prefetch href="/posts">
             <NavLink>Posts</NavLink>
           </Link>
