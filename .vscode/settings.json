@@ -1,4 +1,5 @@
 {
-  "editor.formatOnSave": true,
-  "prettier.semi": false
+  "[javascript]": {
+    "editor.formatOnSave": true
+  }
 }
