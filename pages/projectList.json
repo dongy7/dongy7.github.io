@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "name": "Synced",
+      "description": "Web app for watching synced videos with friends.",
+      "src": "https://github.com/dongy7/Synced",
+      "demo": "https://synced-app.herokuapp.com/"
+    },
+    {
       "name": "React Animated Terminal",
       "description": "React component for rendering animated terminals.",
       "src": "https://github.com/dongy7/react-animated-term",
