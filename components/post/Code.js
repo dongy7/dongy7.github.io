@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Code = styled.code`
-  color: #bd10e0;
+  color: #8e43e7;
   font-size: 13px;
   line-height: 22px;
   font-family: Operator Mono, Menlo, Monaco, Lucida Console, Liberation Mono,

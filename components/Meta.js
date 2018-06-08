@@ -23,7 +23,7 @@ injectGlobal`
   }
 
   a {
-    color: #4b9cd3;
+    color: #3369e7;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     cursor: pointer;
     text-decoration: none;
@@ -35,7 +35,7 @@ injectGlobal`
   }
 
   #nprogress .bar {
-    background: #4b9cd3;
+    background: #3369e7;
     position: fixed;
     z-index: 1031;
     top: 0;
@@ -50,7 +50,7 @@ injectGlobal`
     right: 0px;
     width: 100px;
     height: 100%;
-    box-shadow: 0 0 10px #4b9cd3, 0 0 5px #4b9cd3;
+    box-shadow: 0 0 10px #3369e7, 0 0 5px #3369e7;
     opacity: 1.0;
     transform: rotate(3deg) translate(0px, -4px);
   }
