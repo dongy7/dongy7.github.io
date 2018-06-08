@@ -5,7 +5,7 @@ import Router from 'next/router'
 import * as gtag from '../lib/gtag'
 
 Router.onRouteChangeStart = () => NProgress.start()
-Router.onRouteChangeComplete = (url) => {
+Router.onRouteChangeComplete = url => {
   NProgress.done()
   gtag.pageview(url)
 }

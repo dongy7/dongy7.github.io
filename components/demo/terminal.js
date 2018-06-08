@@ -6,26 +6,24 @@ export default () => {
     {
       text: 'node example.js',
       cmd: true,
-      delay: 80
+      delay: 80,
     },
     {
       text: '✔ Done',
       cmd: false,
       repeat: true,
       repeatCount: 2,
-      frames: spinnerFrames.map(function (spinner) {
+      frames: spinnerFrames.map(function(spinner) {
         return {
           text: spinner + ' Running...',
-          delay: 80
+          delay: 80,
         }
       }),
     },
     {
       text: '',
-      cmd: true
-    }
+      cmd: true,
+    },
   ]
-  return (
-    <Terminal lines={spinnerLines} interval={40} height={60} />
-  )
+  return <Terminal lines={spinnerLines} interval={40} height={60} />
 }

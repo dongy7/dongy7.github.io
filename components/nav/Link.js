@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 const Link = styled.a.attrs({
-  target: '_blank'
-}) `
+  target: '_blank',
+})`
   color: #999;
   padding: 10px;
   padding-left: 10px;
@@ -24,10 +24,7 @@ class NavLink extends React.Component {
 
   render() {
     return (
-      <Link
-        onClick={() => this.context.onNavLinkClick()}
-        {...this.props}
-      />
+      <Link onClick={() => this.context.onNavLinkClick()} {...this.props} />
     )
   }
 }

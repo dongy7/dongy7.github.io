@@ -19,5 +19,5 @@ const Menu = styled.div`
 `
 export default ({ onClick, toggled }) =>
   <Menu toggled={toggled}>
-    <i className="fas fa-lg fa-chevron-down" onClick={() => onClick()}></i>
+    <i className="fas fa-lg fa-chevron-down" onClick={() => onClick()} />
   </Menu>

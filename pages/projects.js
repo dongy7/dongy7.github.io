@@ -32,11 +32,17 @@ export default () => {
             <Item key={name}>
               <Project>
                 <Header>
-                  <Name>{name}</Name>
+                  <Name>
+                    {name}
+                  </Name>
                 </Header>
-                <Description>{description}</Description>
+                <Description>
+                  {description}
+                </Description>
                 <Footer>
-                  <Button href={src} first>Source</Button>
+                  <Button href={src} first primary>
+                    Source
+                  </Button>
                   <Button href={demo}>Demo</Button>
                 </Footer>
               </Project>

@@ -4,7 +4,7 @@ const primaryColor = '#3369e7'
 const secondaryColor = '#ff4f81'
 
 const Button = styled.a.attrs({
-  target: '_blank'
+  target: '_blank',
 })`
   border-radius: 3px;
   padding: 0.25em 1em;

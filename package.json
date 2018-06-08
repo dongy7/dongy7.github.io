@@ -12,7 +12,7 @@
     "build": "nps build",
     "publish": "nps publish",
     "deploy": "npm run build && npm run publish",
-    "prettier": "prettier --no-semi --single-quote --trailing-comma es5 --write \"{components, layouts, pages}/**/*.js\""
+    "format": "prettier --no-semi --single-quote --trailing-comma es5 '{components, layouts, pages}/**/*.js' --write"
   },
   "dependencies": {
     "@mdx-js/loader": "^0.8.1",
