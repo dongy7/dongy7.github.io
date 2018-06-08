@@ -10,15 +10,14 @@ const Button = styled.a.attrs({
   padding: 0.25em 1em;
   margin: 0 0.5em;
   margin-left: ${props => (props.first ? 0 : '0.5em')};
-  background: transparent;
-  color: ${props => (props.primary ? primaryColor : secondaryColor)};
+  background: ${props => (props.primary ? primaryColor : secondaryColor)};
   border: 2px solid;
   border-color: ${props => (props.primary ? primaryColor : secondaryColor)};
+  color: white;
 
   &:hover {
-    background-color: ${props =>
-      props.primary ? primaryColor : secondaryColor};
-    color: white;
+    background: transparent;
+    color: ${props => (props.primary ? primaryColor : secondaryColor)};
   }
 `
 
