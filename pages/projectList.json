@@ -1,6 +1,12 @@
 {
   "projects": [
     {
+      "name": "🛠 Scheme2js",
+      "description": "Scheme to JavaScript transpiler",
+      "src": "https://github.com/dongy7/scheme2js",
+      "demo": "https://github.com/dongy7/scheme2js"
+    },
+    {
       "name": "📺 Synced",
       "description": "Web app for watching synced videos with friends.",
       "src": "https://github.com/dongy7/Synced",
@@ -11,12 +17,6 @@
       "description": "React component for rendering animated terminals.",
       "src": "https://github.com/dongy7/react-animated-term",
       "demo": "https://codesandbox.io/s/62w3w6j8n3"
-    },
-    {
-      "name": "🔑 RNN Password Vault Cracker",
-      "description": "RNN based system for detecting decoy password vaults.",
-      "src": "https://github.com/dongy7/password/",
-      "demo": "https://github.com/dongy7/password/blob/master/Cracking_Password_Vaults_RNN.pdf"
     },
     {
       "name": "💬 Twitch Chat CLI",
