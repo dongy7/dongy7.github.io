@@ -38,7 +38,7 @@ export default ({ children, project }) => {
             </NavLink>
           </Link>
           <Link>
-            <NavLink href="mailto:dong@dongyeop.com">
+            <NavLink href="mailto:dongy7@gmail.com">
               <i className="fas fa-envelope fa-lg"></i>
             </NavLink>
           </Link>
