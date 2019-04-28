@@ -23,7 +23,8 @@ module.exports = {
       default: series(
         'next build',
         'next export',
-        'cp CNAME out/'
+        'cp CNAME out/',
+        'cp .nojekyll out/.nojekyll'
       )
     },
     publish: {
