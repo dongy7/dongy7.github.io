@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-const Link = styled.a.attrs({
-  target: '_blank',
-})`
+const Link = styled.a.attrs(props => ({
+  target: props.newTab ? '_blank' : '',
+}))`
   color: #999;
   padding: 10px;
   padding-left: 10px;

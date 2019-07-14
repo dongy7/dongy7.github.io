@@ -1,4 +1,4 @@
-import { injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import Head from 'next/head'
 import NProgress from 'nprogress'
 import Router from 'next/router'
@@ -11,7 +11,7 @@ Router.onRouteChangeComplete = url => {
 }
 Router.onRouteChangeError = () => NProgress.done()
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     box-sizing: border-box;
@@ -72,4 +72,5 @@ export default () =>
         title="Dong Yeop Lee"
       />
     </Head>
+    <GlobalStyle />
   </div>

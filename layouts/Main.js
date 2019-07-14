@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Router from 'next/router'
 import Meta from '../components/Meta'
 import Navbar from '../components/nav/Navbar'
 import { LeftNav, RightNav } from '../components/nav/Navbar'
@@ -13,35 +12,29 @@ export default ({ children, project }) => {
     <div>
       <Navbar>
         <LeftNav>
-          <Link prefetch href="/">
+          <Link prefetch href="/" passHref>
             <NavLink first>Home</NavLink>
           </Link>
-          <Link prefetch href="/about">
+          <Link prefetch href="/about" passHref>
             <NavLink>About</NavLink>
           </Link>
-          <Link prefetch href="/projects">
+          <Link prefetch href="/projects" passHref>
             <NavLink>Projects</NavLink>
           </Link>
-          <Link prefetch href="/posts">
+          <Link prefetch href="/posts" passHref>
             <NavLink>Posts</NavLink>
           </Link>
         </LeftNav>
         <RightNav>
-          <Link>
-            <NavLink href="https://github.com/dongy7/">
-              <i className="fab fa-github fa-lg"></i>
-            </NavLink>
-          </Link>
-          <Link>
-            <NavLink href="https://www.linkedin.com/in/dongy7/">
-              <i className="fab fa-linkedin fa-lg"></i>
-            </NavLink>
-          </Link>
-          <Link>
-            <NavLink href="mailto:dongy7@gmail.com">
-              <i className="fas fa-envelope fa-lg"></i>
-            </NavLink>
-          </Link>
+          <NavLink href="https://github.com/dongy7/" newTab>
+            <i className="fab fa-github fa-lg" />
+          </NavLink>
+          <NavLink href="https://www.linkedin.com/in/dongy7/" newTab>
+            <i className="fab fa-linkedin fa-lg" />
+          </NavLink>
+          <NavLink href="mailto:dongy7@gmail.com" newTab>
+            <i className="fas fa-envelope fa-lg" />
+          </NavLink>
         </RightNav>
       </Navbar>
       <Container>
