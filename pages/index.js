@@ -61,7 +61,7 @@ export default () =>
           <Link prefetch href="/posts">
             <A>Posts</A>
           </Link>
-          <A href="mailto:dong@dongyeop.com">Email</A>
+          <A href="mailto:dongy7@gmail.com">Email</A>
         </Nav>
       </Main>
     </Home>
