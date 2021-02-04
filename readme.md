@@ -1,28 +1,28 @@
 # blog
 
 This is a [next.js](https://github.com/zeit/next.js) app that powers my personal website.
-It is deployed using [now](https://zeit.co/now).
+It is deployed using [Vercel](https://vercel.com/).
 
 ## Running
+Install the [Vercel CLI](https://vercel.com/download).
 
-### Development
+## Development
 
-Run the following commands:
 ```sh
-$ npm install
-$ npm run dev
+$ vc dev
 ```
 
-Go to `http://localhost:3000` to see the app.
+You can see the app at localhost:3000.
 
-### Deploying
+## Deployment 
 
-Install `now`:
+### Staging
 ```sh
-$ npm install -g now
+$ vc
 ```
 
-Then run `now` to deploy the app:
+### Production
+
 ```sh
-$ now
+$ vc --prod
 ```
