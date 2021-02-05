@@ -3,7 +3,7 @@ import Post from '../../layouts/Post'
 import RxPost from '../../markdown/2017/complex-data-fetching-made-simple-with-rx.md'
 import withMarkdownStyle from '../../layouts/withMarkdownStyle'
 
-export default () => {
+const Content = () => {
   const PostContent = withMarkdownStyle(RxPost)
   return (
     <Post
@@ -14,3 +14,5 @@ export default () => {
     </Post>
   )
 }
+
+export default Content

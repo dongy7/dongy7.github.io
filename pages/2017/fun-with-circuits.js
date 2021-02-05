@@ -2,7 +2,7 @@ import Post from '../../layouts/Post'
 import withMarkdownStyle from '../../layouts/withMarkdownStyle'
 import CircuitPost from '../../markdown/2017/fun-with-circuits.md'
 
-export default () => {
+const Content = () => {
   const PostContent = withMarkdownStyle(CircuitPost)
   return (
     <Post
@@ -13,3 +13,5 @@ export default () => {
     </Post>
   )
 }
+
+export default Content

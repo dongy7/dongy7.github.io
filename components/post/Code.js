@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Code = styled.code`
+const StyledCode = styled.code`
   color: #8e43e7;
   font-size: 13px;
   line-height: 22px;
@@ -17,7 +17,9 @@ const stripLeadingNewline = text => {
   return formattedText
 }
 
-export default ({ children }) =>
-  <Code>
+const Code = ({ children }) =>
+  <StyledCode>
     {stripLeadingNewline(children)}
-  </Code>
+  </StyledCode>
+
+export default Code

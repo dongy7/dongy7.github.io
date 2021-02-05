@@ -39,7 +39,7 @@ const AvDiv = styled.div`
   margin-top: 20px;
 `
 
-export default () =>
+const App = () =>
   <Page>
     <Head>
       <title>Dong Yeop Lee</title>
@@ -66,3 +66,5 @@ export default () =>
       </Main>
     </Home>
   </Page>
+
+export default App

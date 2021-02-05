@@ -12,7 +12,7 @@ import Footer from '../components/project/Footer'
 import Button from '../components/project/Button'
 import { projects } from './projectList'
 
-export default () => {
+const Projects = () => {
   const MainTitleSection = styled.div`
     text-align: center;
     margin-bottom: 50px;
@@ -53,3 +53,5 @@ export default () => {
     </Page>
   )
 }
+
+export default Projects

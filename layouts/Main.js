@@ -6,22 +6,22 @@ import NavLink from '../components/nav/Link'
 import MainContainer from '../components/Container'
 import ProjectContainer from '../components/ProjectContainer'
 
-export default ({ children, project }) => {
+const Main = ({ children, project }) => {
   const Container = project ? ProjectContainer : MainContainer
   return (
     <div>
       <Navbar>
         <LeftNav>
-          <Link prefetch href="/" passHref>
+          <Link href="/" passHref>
             <NavLink first>Home</NavLink>
           </Link>
-          <Link prefetch href="/about" passHref>
+          <Link href="/about" passHref>
             <NavLink>About</NavLink>
           </Link>
-          <Link prefetch href="/projects" passHref>
+          <Link href="/projects" passHref>
             <NavLink>Projects</NavLink>
           </Link>
-          <Link prefetch href="/posts" passHref>
+          <Link href="/posts" passHref>
             <NavLink>Posts</NavLink>
           </Link>
         </LeftNav>
@@ -44,3 +44,5 @@ export default ({ children, project }) => {
     </div>
   )
 }
+
+export default Main

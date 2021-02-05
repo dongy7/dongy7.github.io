@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 
-const Meta = styled.div`
+const StyledMeta = styled.div`
   margin-bottom: 20px;
   color: #777;
 `
 
-export default ({ date }) =>
-  <Meta>
+const Meta = ({ date }) =>
+  <StyledMeta>
     {date}
-  </Meta>
+  </StyledMeta>
+
+export default Meta

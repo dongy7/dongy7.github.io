@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Avatar = styled.div`
+const StyledAvatar = styled.div`
   border-radius: 100%;
   margin: auto;
 `
@@ -22,9 +22,11 @@ const Img = styled.img`
   height: 100%;
 `
 
-export default ({ url, height, width }) =>
-  <Avatar>
+const Avatar = ({ url, height, width }) =>
+  <StyledAvatar>
     <Span height={height} width={width}>
       <Img src={url} />
     </Span>
-  </Avatar>
+  </StyledAvatar>
+
+export default Avatar

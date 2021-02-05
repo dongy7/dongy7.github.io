@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import styled from 'styled-components'
 
 const H1 = styled.h1`
@@ -5,9 +6,11 @@ const H1 = styled.h1`
   font-size: 32px;
 `
 
-export default ({ title }) =>
+const Header = ({ title }) =>
   <div>
     <H1>
       {title}
     </H1>
   </div>
+
+export default Header

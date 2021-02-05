@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Page from '../layouts/Main'
 import { posts } from '../posts'
 
-export default () =>
+const Posts = () =>
   <Page>
     <Head>
       <title>Posts</title>
@@ -54,3 +54,5 @@ const Post = ({ id, date, title }) =>
       </a>
     </Link>
   </PostDiv>
+
+export default Posts

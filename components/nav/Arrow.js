@@ -17,7 +17,9 @@ const Menu = styled.div`
     transform: ${props => (props.toggled ? 'rotate(180deg)' : '')};
   }
 `
-export default ({ onClick, toggled }) =>
+const Arrow = ({ onClick, toggled }) =>
   <Menu toggled={toggled}>
     <i className="fas fa-lg fa-chevron-down" onClick={() => onClick()} />
   </Menu>
+
+export default Arrow

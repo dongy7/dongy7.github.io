@@ -1,6 +1,6 @@
 import Terminal from 'react-animated-term'
 
-export default () => {
+const AnimatedTerminal = () => {
   const spinnerFrames = ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏']
   const spinnerLines = [
     {
@@ -13,7 +13,7 @@ export default () => {
       cmd: false,
       repeat: true,
       repeatCount: 2,
-      frames: spinnerFrames.map(function(spinner) {
+      frames: spinnerFrames.map(function (spinner) {
         return {
           text: spinner + ' Running...',
           delay: 80,
@@ -27,3 +27,5 @@ export default () => {
   ]
   return <Terminal lines={spinnerLines} interval={40} height={60} />
 }
+
+export default AnimatedTerminal

@@ -1,9 +1,11 @@
 import Terminal from 'react-animated-term'
 import styled from 'styled-components'
 
-const StyledTerminal = styled.div`margin: 40px 0 40px 0;`
+const Styled = styled.div`margin: 40px 0 40px 0;`
 
-export default props =>
-  <StyledTerminal>
+const StyledTerminal = props =>
+  <Styled>
     <Terminal {...props} />
-  </StyledTerminal>
+  </Styled>
+
+export default StyledTerminal

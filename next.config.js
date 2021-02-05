@@ -1,5 +1,3 @@
-const withCSS = require('@zeit/next-css')
-
 const config = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   webpack: (config, { defaultLoaders }) => {
@@ -17,4 +15,4 @@ const config = {
   },
 }
 
-module.exports = withCSS(config)
+module.exports = config

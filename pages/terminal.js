@@ -3,7 +3,7 @@ import Title from '../components/post/Title'
 import TerminalPost from '../markdown/terminal.mdx'
 import withMarkdownStyle from '../layouts/withMarkdownStyle'
 
-export default () => {
+const Terminal = () => {
   const Content = withMarkdownStyle(TerminalPost)
   return (
     <Page>
@@ -11,3 +11,5 @@ export default () => {
     </Page>
   )
 }
+
+export default Terminal
