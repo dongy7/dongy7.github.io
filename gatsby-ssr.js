@@ -1,12 +1,21 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/
- */
+const React = require("react")
 
-/**
- * @type {import('gatsby').GatsbySSR['onRenderBody']}
- */
-exports.onRenderBody = ({ setHtmlAttributes }) => {
-  setHtmlAttributes({ lang: `en` })
+const themeScript = `
+(function() {
+  var stored = localStorage.getItem('theme');
+  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (stored === 'dark' || (!stored && prefersDark)) {
+    document.documentElement.classList.add('dark');
+  }
+})();
+`
+
+exports.onRenderBody = ({ setHtmlAttributes, setPreBodyComponents }) => {
+  setHtmlAttributes({ lang: "en" })
+  setPreBodyComponents([
+    React.createElement("script", {
+      key: "theme-script",
+      dangerouslySetInnerHTML: { __html: themeScript },
+    }),
+  ])
 }
